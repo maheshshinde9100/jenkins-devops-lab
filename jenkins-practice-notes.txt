@@ -1,0 +1,12 @@
+Jenkins CI/CD Practice Notes..
+
+- Configured Jenkins locally on port 9090
+- Connected GitHub repository with Jenkins
+- Created Freestyle Jenkins job..
+- Configured Node.js environment in Jenkins
+- Automated npm install using Jenkins build steps
+- Practiced SCM Polling for automatic build trigger
+- Learned Windows batch commands in Jenkins
+- Successfully executed CI build...
+- Explored Jenkins workspace and console output logs
+- Understood CI/CD workflow step-by-step
