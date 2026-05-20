@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jenkins Practice</title>
+</head>
+
+<body>
+
+    <h1>Student Data</h1>
+
+    <button onclick="loadStudents()">
+        Load Students
+    </button>
+
+    <ul id="students"></ul>
+
+    <script>
+        async function loadStudents() {
+            const response = await fetch("http://localhost:5000/students");
+            const data = await response.json();
+
+            const studentList = document.getElementById("students");
+            studentList.innerHTML = "";
+
+            data.forEach(student => {
+                const li = document.createElement("li");
+                li.innerText = student.name;
+
+                studentList.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
